@@ -11,6 +11,9 @@
 - pinterest
 - email
 
+### Installation
+`$ npm install simple-social-share`
+
 ## USAGE
 
 ### Facebook

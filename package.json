@@ -1,6 +1,6 @@
 {
   "name": "simple-social-share",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple web sharing",
   "main": "index.js",
   "scripts": {

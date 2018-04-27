@@ -10,6 +10,9 @@
 - linkedIn
 - pinterest
 - email
+- viber
+- whatsapp
+- messenger (facebook)
 
 ### Installation
 `$ npm install simple-social-share`
@@ -40,7 +43,7 @@
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab nemo temporibus ex rerum at consequatur, eligendi, rem non quia odio! Quibusdam enim vero qui consequatur dicta doloremque aliquam. Quas.',
     image: 'https://thumb1.shutterstock.com/display_pic_with_logo/154447/235089946/stock-photo-cute-little-red-kitten-sleeps-on-fur-white-blanket-235089946.jpg'
   };
-  const fbAppId = '01234567894561230'; // facebook developer ID
+  const fbAppId = '01234567894561230'; // facebook developer ID, better to implement with .env if possible.
   
   <button onclick={() => fbShare(itemData, fbAppId)}>facebook icon</button>
 ```
@@ -103,6 +106,28 @@
   };
   
   <button onclick={() => emailShare(itemData)}>email icon</button>
+```
+
+### Viber
+```javascript
+  const { viberShare } = require('simple-social-share');
+  
+  <button onclick={(e) => viberShare(e, 'Check this out:')}>viber icon</button>
+```
+
+### WhatsApp
+```javascript
+  const { viberShare } = require('simple-social-share');
+  
+  <button onclick={() => whatsAppShare('Check this out:')}>whatsapp icon</button>
+```
+
+### Facebook Messenger
+```javascript
+  const { viberShare } = require('simple-social-share');
+  const fbAppId = '01234567894561230'; // facebook developer ID, better to implement with .env if possible.
+  
+  <button onclick={() => fbMessengerShare(fbAppId)}>messenger icon</button>
 ```
 
 #### Multiple Usage

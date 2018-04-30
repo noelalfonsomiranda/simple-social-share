@@ -13,6 +13,7 @@
 - viber
 - whatsapp
 - messenger (facebook)
+- skype
 
 ### Installation
 `$ npm install simple-social-share`

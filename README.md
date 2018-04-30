@@ -133,6 +133,7 @@
 
 ### Skype
 ```javascript
+  const { skypeShare } = require('simple-social-share');
   skypeShare() // execute this function somewhere
 
   // Button Styles

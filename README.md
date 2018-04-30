@@ -130,5 +130,19 @@
   <button onclick={() => fbMessengerShare(fbAppId)}>messenger icon</button>
 ```
 
+### Skype
+```javascript
+  skypeShare() // execute this function somewhere
+
+  // Button Styles
+  // - large
+  // - small
+  // - circle
+  // - square
+  // - custom // data-style should be empty then add inline-style or use the class for custom styling
+  
+  <div className='skype-share' data-href='www.skype.com' data-lang='en-US' data-text='some message' data-style='large'>skype icon</div>
+```
+
 #### Multiple Usage
 const { fbShare, emailShare } = require('simple-social-share');

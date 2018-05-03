@@ -1,3 +1,26 @@
+'use strict';
+
+/**
+ * Module exports.
+ * @public
+ */
+
+exports.fbShare = fbShare
+exports.twitterShare = twitterShare
+exports.googlePlusShare = googlePlusShare
+exports.linkedInShare = linkedInShare
+exports.pinterestShare = pinterestShare
+exports.emailShare = emailShare
+exports.viberShare = viberShare
+exports.whatsAppShare = whatsAppShare
+exports.fbMessengerShare = fbMessengerShare
+exports.skypeShare = skypeShare
+
+/**
+ * Module variables.
+ * @private
+ */
+
 var width = 620;
 var height = 360;
 var leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
@@ -96,17 +119,4 @@ function skypeShare () {
     };
     r.loadSkypeWebSdkAsync(p);
   })(window, document, 'script');
-}
-
-module.exports = {
-  fbShare,
-  twitterShare,
-  googlePlusShare,
-  linkedInShare,
-  pinterestShare,
-  emailShare,
-  viberShare,
-  whatsAppShare,
-  fbMessengerShare,
-  skypeShare
 }
